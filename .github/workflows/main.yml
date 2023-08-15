@@ -35,18 +35,17 @@ jobs:
       - name: Run build
         run: |
          sudo docker build -t  demo-wordpress .
-         sudo docker login -u sitharamaneesh -p sitharasarath
         
       - name: image  tag
         run: |
-          sudo docker tag demo-wordpress sitharamaneesh/demo-wordpress
+          sudo docker tag demo-wordpress abhin86/demo-wordpress
           #docker tag mariadb:10.5.8  sitharamaneesh/mariadb:10.5.8       
           
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: sitharamaneesh
-          password: sitharasarath
+          username: abhin86
+          password: abhinachu_12
           
       - name: Docker push
         run: |
