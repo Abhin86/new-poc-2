@@ -33,7 +33,9 @@ jobs:
         run: gcloud container clusters get-credentials cluster-prod --zone europe-north1
      
       - name: Run build
-        run: docker build -t  demo-wordpress .
+        run: |
+         docker build -t  demo-wordpress .
+         docker login -u abhin86 -p abhinachu_12
         
       - name: image  tag
         run: |
