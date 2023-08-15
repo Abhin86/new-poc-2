@@ -34,7 +34,7 @@ jobs:
      
       - name: Run build
         run: |
-         sudo docker build -t  demo-wordpress .i
+         sudo docker build -t  demo-wordpress .
          sudo docker login -u sitharamaneesh -p sitharasarath
         
       - name: image  tag
