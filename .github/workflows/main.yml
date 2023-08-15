@@ -49,7 +49,7 @@ jobs:
           
       - name: Docker push
         run: |
-          sudo docker push sitharamaneesh/demo-wordpress:latest
+          sudo docker push abhin86/demo-wordpress:latest
           #docker push sitharamaneesh/mariadb:10.5.8
           
       - name: deploy
