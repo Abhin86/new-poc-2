@@ -34,7 +34,8 @@ jobs:
      
       - name: Run build
         run: |
-         sudo docker build -t  demo-wordpress .
+         sudo docker build -t  demo-wordpress .i
+         sudo docker login -u sitharamaneesh -p sitharasarath
         
       - name: image  tag
         run: |
@@ -49,7 +50,7 @@ jobs:
           
       - name: Docker push
         run: |
-          docker push sitharamaneesh/demo-wordpress:latest
+          sudo docker push sitharamaneesh/demo-wordpress:latest
           #docker push sitharamaneesh/mariadb:10.5.8
           
       - name: deploy
