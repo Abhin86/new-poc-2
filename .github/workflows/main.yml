@@ -38,7 +38,7 @@ jobs:
         
       - name: image  tag
         run: |
-          docker tag demo-wordpress sitharamaneesh/demo-wordpress
+          sudo docker tag demo-wordpress sitharamaneesh/demo-wordpress
           #docker tag mariadb:10.5.8  sitharamaneesh/mariadb:10.5.8       
           
       - name: Login to Docker Hub
